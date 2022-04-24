@@ -87,12 +87,13 @@ class _MyHomePageState extends State<MyHomePage> {
               body: Center(
                 child: ReorderableListView.builder(
                   buildDefaultDragHandles: controller.status ==
-                      'START', // disable drag&drop if there's only one item
+                      'START', // Restricting drag and drop only on START
                   padding: const EdgeInsets.all(8),
                   itemCount: controller.entries.length,
                   itemBuilder: (BuildContext context, int index) {
                     return Dismissible(
-                      direction: controller.status == 'START'
+                      direction: controller.status ==
+                              'START' //restricting swipe only on START
                           ? DismissDirection.endToStart
                           : DismissDirection.none,
                       key: Key(controller.entries[index].url!),
