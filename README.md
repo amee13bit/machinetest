@@ -1,16 +1,16 @@
 # machinetest
 
-A new Flutter project.
+Key functions
 
-## Getting Started
+- Load on Start 
+  loadOnStart will be called when user taps on START, it will initialize queue and start executing one by one
+- Insertion
+  for adding new url links
+- Deletion
+    To delete the unprocessed items
+- Shorter links 
+   To create shorter links to display in list
+   
+Views Used :
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Add View : Used for to create dialog for adding new url .
